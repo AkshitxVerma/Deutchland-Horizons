@@ -2,13 +2,19 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-
+ <link rel="stylesheet" href="/css/custom.css">
+ <link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-3.7.1.min.js"></script>
+<script src="/js/bootstrap5.3.3.js"></script>
 <title>login page</title>
 <style>
+
 body{
-background-color: #fff4f4;
+    background: rgb(4, 158, 179);
 }
 </style>
+
+
 </head>
 <body class="login-bg" >
     <div class="container  d-flex justify-content-center align-items-center"> 
@@ -29,5 +35,6 @@ background-color: #fff4f4;
             <p th:if="${param.error}" class="text-danger text-center mt-2">Invalid username or password.</p>
         </div>
     </div>
+    
 </body>
-</html>
+</html>    
